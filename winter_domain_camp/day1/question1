@@ -63,3 +63,17 @@ create table orders_completed(
 insert into orders_completed select order_no ,   purch_amt,   ord_date,fname, email_ads,  cont_no from orders2 where ord_date=TO_DATE('2012-10-10','YYYY-MM-DD');
 
 select * from  orders_completed;
+
+***********************************************************************************************
+
+Create table customers (customer_id number, cust_name varchar(20), city
+varchar(20), grade number, salesman_id number)
+
+insert into customers values(3002,&#39;Nick Rimando &#39; &#39;New York&#39;,100,5001); insert
+into customers values(3007,&#39;Brad Davis &#39;, &#39;New York&#39;,200,5001); insert into
+customers values(3005,&#39;Graham Zusi &#39;, &#39;California&#39;,200,5002); insert into
+values(3008,&#39;Julian Green &#39;, &#39;London&#39;,300,5002); insert into customers
+values(3004,&#39;Fabian Johnson &#39;, &#39;Paris&#39;,300,5006); insert into customers
+values(3009,&#39;Geoff Camerson &#39;, &#39;Berlin&#39;,100,5003); insert into customers
+values(3003,&#39;Jozy Altidor&#39;, &#39;Moscow&#39;,200,5007); insert into customers
+values(3001,&#39;Brad Guzan &#39;, &#39;London&#39;, null,5005);
